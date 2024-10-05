@@ -1,0 +1,10 @@
+services:
+   mysql:
+     image: mysql:latest
+     enviroment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: root
+   wordpress:
+    image: wordpress
+    ports:
+      - 8080:80

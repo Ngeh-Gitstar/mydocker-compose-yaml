@@ -1,0 +1,8 @@
+services:
+  image: nginx
+  ports:
+   - 8082:80
+   tomcat:
+     image: tomee:latest
+     ports:
+     - 8083:80
